@@ -1,0 +1,36 @@
+---
+
+import { Image } from 'astro:assets';
+import '../styles/reset.css';
+import mainPink from '../images/img_main_pink.jpg';
+---
+
+<main class="home">
+  <section>
+    <h1>This is practice page</h1>
+    <p>IVE JAPAN 2nd EP ALIVE 2024.8.28 RELEASE</p>
+  </section>
+  <figure class="main-image-wrapper">
+    <Image src={mainPink} alt="IVE Japan 2nd EP - ALIVE" />
+  </figure>
+</main>
+
+
+<style>
+  .home {
+    background: #eb7bac;
+    padding-bottom: 3rem;
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  .main-image-wrapper {
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 85rem;
+    margin: 2rem auto;
+  }
+</style>
