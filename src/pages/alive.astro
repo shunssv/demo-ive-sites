@@ -1,0 +1,67 @@
+---
+import { Image } from 'astro:assets';
+import '../styles/reset.css';
+import LayoutPractice from '../layouts/LayoutPractice.astro';
+
+import mainPink from '../images/img_main_pink.jpg';
+import aliveLogo from '../images/logo_album.svg';
+import iveLogo from '../images/logo_main.svg';
+import pinkGAEUL from '../images/img_ft_pink_GAEUL.jpg';
+import pinkLEESEO from '../images/img_ft_pink_LEESEO.jpg';
+import pinkLIZ from '../images/img_ft_pink_LIZ.jpg';
+import pinkREI from '../images/img_ft_pink_REI.jpg';
+import pinkWONYOUNG from '../images/img_ft_pink_WONYOUNG.jpg';
+import pinkYUJIN from '../images/img_ft_pink_YUJIN.jpg';
+---
+
+<LayoutPractice title="Practice page">
+  <main class="home">
+    <section>
+      <Image src={iveLogo} alt="IVE" />
+      <h1>IVE JAPAN 2nd EP ALIVE<br>2024.8.28 RELEASE</h1>
+    </section>
+    <Image src={aliveLogo} alt="ALIVE" />
+    <figure class="main-image-wrapper">
+      <Image src={mainPink} alt="IVE Japan 2nd EP - ALIVE" />
+    </figure>
+    <h2 class="text-3xl font-bold underline text-center">
+      Hello world!
+    </h2>
+  </main>
+  <footer>
+    <section>
+      <h2><Image src={aliveLogo} alt="ALIVE" /></h2>
+      <div class="member-container">
+        <figure><Image src={pinkLEESEO} alt="LEESEO" /></figure>
+        <figure><Image src={pinkLEESEO} alt="LEESEO" /></figure>
+        <figure><Image src={pinkLEESEO} alt="LEESEO" /></figure>
+        <figure><Image src={pinkLEESEO} alt="LEESEO" /></figure>
+        <figure><Image src={pinkLEESEO} alt="LEESEO" /></figure>
+        <figure><Image src={pinkLEESEO} alt="LEESEO" /></figure>
+      </div>
+    </section>
+  </footer>
+</LayoutPractice>
+
+<style>
+  .home {
+    padding-bottom: 3rem;
+  }
+
+  h1 {
+    color: #fff;
+  }
+
+  .main-image-wrapper {
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 85rem;
+    margin: 2rem auto;
+  }
+
+  .member-container {
+    display: flex;
+    
+  }
+</style>
